@@ -1,12 +1,23 @@
 var runner = document.getElementById('runner');
 var score = document.getElementById('sc_board');
 var rock= document.getElementById('rock1');
+var jump_click=document.getElementById('button');
 var i = 0;
 score.innerHTML = i;
 
 setInterval(() => {
     
     document.addEventListener('keypress', () => {
+        console.log('hi!');
+        if (!runner.classList.contains('jump')) {
+            runner.classList.add('jump');
+            setTimeout(() => {
+                runner.classList.remove('jump');
+            }, 500);
+        }
+        
+    });
+    jump_click.addEventListener('click', () => {
         console.log('hi!');
         if (!runner.classList.contains('jump')) {
             runner.classList.add('jump');
