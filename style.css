@@ -40,6 +40,16 @@
     /* transition-duration: 1s; */
 
 }
+#button{
+    position: absolute;
+    height:4vmax;
+    width: 4vmax;
+    left:calc(50% - 2vmax);
+    top:calc(50% - 2vmax);
+    cursor: pointer;
+    border-radius: 2vmax;
+    margin-top: 1vmax;
+}
 .jump{
     animation-name: jumper;
     animation-duration: 0.5s;
@@ -52,7 +62,7 @@
     height: 12vmax;
     padding: 2vmax;
     width: 20vmax;
-    top:calc(40% - 9vmax);
+    top:calc(35% - 9vmax);
     left:calc(50% - 10vmax);
     background-color: rgba(255,255,255,0.4);
     border-radius: 3vmax;
